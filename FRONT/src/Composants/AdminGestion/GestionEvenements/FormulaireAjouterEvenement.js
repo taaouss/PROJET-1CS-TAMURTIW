@@ -2,9 +2,15 @@ import React from 'react'
 import  { useState } from 'react';
 import Container from '@mui/material/Container';
 import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
+import RemoveIcon from '@mui/icons-material/Remove';
+import AddIcon from '@mui/icons-material/Add';
+import Icon from '@mui/material/Icon';
+import { v4 as uuidv4 } from 'uuid';
 
 export default function FormulaireAjouterEvenement() {
-    const [inputFields, setInputFields] = useState({
+    const [inputFields, setInputFields] = useState([{
         dateDebut:'20 Mars 2023',
         dateFin:'20 Avril 2023',
         gratuite:0,
@@ -24,7 +30,7 @@ export default function FormulaireAjouterEvenement() {
         gratuite:500,
         titre:'Le festival de la culture',
         paragraphe:"Yakouren est une ville connue pour sa riche culture amazighe. Un festival de la culture amazighe serait donc un événement approprié pour célébrer cette culture locale. Le festival comprendrait des présentations de musique traditionnelle, des expositions d'art et d'artisanat amazigh, des ateliers de cuisine amazighe, des conférences sur l'histoire et la culture amazighes et des spectacles de danse amazighe. Ce serait une occasion pour les gens de la région et les visiteurs de découvrir et d'apprécier la culture amazighe unique de Yakouren."
-    })
+    }])
      
     const handleChangeInput = (id, event) => {
         const newInputFields = inputFields.map(i => {
@@ -49,15 +55,14 @@ export default function FormulaireAjouterEvenement() {
         <Container>
           <h2>Ajouter un evenement :</h2>
           <form>
-          { inputFields.map(inputField =>
-           (
+          { inputFields.map(inputField =>(
               <div >
                 <TextField
                   name="titre"
                   label="Nom de l'évènement"
                   variant="filled"
                   type='text'
-                  value={inputFields.titre}
+                  value={inputField.titre}
                   onChange={event => handleChangeInput(inputField.id, event)}
                 />
                 <TextField
@@ -65,7 +70,7 @@ export default function FormulaireAjouterEvenement() {
                   label="Début de l'évenement"
                   type="text"
                   variant="filled"
-                  value={inputFields.dateDebut}
+                  value={inputField.dateDebut}
                   onChange={event => handleChangeInput(inputField.id, event)}
                 />
                  <TextField
@@ -73,7 +78,7 @@ export default function FormulaireAjouterEvenement() {
                   label="Fin de l'évènement"
                   variant="filled"
                   type="text"
-                  value={inputFields.dateFin}
+                  value={inputField.dateFin}
                   onChange={event => handleChangeInput(inputField.id, event)}
                 />
                   <TextField
@@ -81,7 +86,7 @@ export default function FormulaireAjouterEvenement() {
                   label="Prix du passe "
                   variant="filled"
                   type="number"
-                  value={inputFields.gratuite}
+                  value={inputField.gratuite}
                   onChange={event => handleChangeInput(inputField.id, event)}
                 />
                   <TextField
@@ -89,10 +94,10 @@ export default function FormulaireAjouterEvenement() {
                   label="Description de l'évènement"
                   variant="filled"
                   type="text"
-                  value={inputFields.paragraphe}
+                  value={inputField.paragraphe}
                   onChange={event => handleChangeInput(inputField.id, event)}
                 />
-                 <IconButton disabled={inputFields.length === 1} onClick={() => handleRemoveFields(inputField.id)}>
+                 <IconButton disabled={inputField.length === 1} onClick={() => handleRemoveFields(inputField.id)}>
                   <RemoveIcon />
                 </IconButton>
                 <IconButton
