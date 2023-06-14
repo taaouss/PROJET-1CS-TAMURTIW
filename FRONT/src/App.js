@@ -13,17 +13,22 @@ import FormulaireHoraire from './Composants/AdminGestion/GestionInformations/For
 import FormulaireDescription from './Composants/AdminGestion/GestionInformations/Formulaires/FormulaireDescription';
 import Formulaire from './Composants/AdminGestion/GestionInformations/Formulaires/Formulaire';
 import Informations from './Composants/AdminGestion/GestionInformations/Informations';
+import FormulaireAjouterEvenement from './Composants/AdminGestion/GestionEvenements/FormulaireAjouterEvenement';
 function App() {
   return(
   
  
  <>
+
+ {/*
  <Router> 
  <Routes>
  <Route index element={<AppAdmin></AppAdmin>}/>
  <Route path="Formulaire"  element={<Formulaire/>}/>
  </Routes>
  </Router> 
+  */}
+  <FormulaireAjouterEvenement></FormulaireAjouterEvenement>
  </> 
 
   )
