@@ -14,10 +14,10 @@ import MenuItem from '@mui/material/MenuItem';
 
 function FormulaireTransports() {
     const [inputFields, setInputFields] = useState([
-        {"duree":"3:23 PM","mode":"rhoncus","lieu":"96419 Linden Court","eco":false},
-    {"duree":11,"mode":"lacinia","lieu":"5 Westridge Pass","eco":true},
-    {"duree":9,"mode":"ac","lieu":"08027 Fairfield Drive","eco":true},
-    {"duree":22,"mode":"consectetuer adipiscing","lieu":"46 Becker Court","eco":true},
+        {"id":1,"duree":"3:23 PM","mode":"rhoncus","lieu":"96419 Linden Court","eco":false},
+    {"id":2,"duree":11,"mode":"lacinia","lieu":"5 Westridge Pass","eco":true},
+    {"id":3,"duree":9,"mode":"ac","lieu":"08027 Fairfield Drive","eco":true},
+    {"id":4,"duree":22,"mode":"consectetuer adipiscing","lieu":"46 Becker Court","eco":true},
       ]);
     
       const handleSubmit = (e) => {

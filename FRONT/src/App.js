@@ -20,15 +20,14 @@ function App() {
  
  <>
 
- {/*
+
  <Router> 
  <Routes>
  <Route index element={<AppAdmin></AppAdmin>}/>
  <Route path="Formulaire"  element={<Formulaire/>}/>
+ <Route path="MiseAjourEvenements"  element={  <FormulaireAjouterEvenement></FormulaireAjouterEvenement>}/>
  </Routes>
  </Router> 
-  */}
-  <FormulaireAjouterEvenement></FormulaireAjouterEvenement>
  </> 
 
   )

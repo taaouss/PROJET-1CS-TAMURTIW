@@ -1,5 +1,6 @@
 import React from 'react'
 import Evenement from './Evenement';
+import { Link } from 'react-router-dom';
 function Evenements(props) {
     
   return (
@@ -10,7 +11,7 @@ function Evenements(props) {
             </div>
             ))}
             </div>
-            <button className='ajouter'>Ajouter un événement</button>
+            <Link to="/MiseAjourEvenements"><button className='ajouter'>Mise à jour des évenements </button></Link>
             <div className='nombre'>Nombre total d'événements est  :<div className='resultat'>{props.data.length}</div></div></div>
   )
 }
