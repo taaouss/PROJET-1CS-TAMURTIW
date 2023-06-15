@@ -3,7 +3,7 @@
     height: 70px;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
-    background-image: url("../../FRONT/public/image_2023-05-11_142652223-removebg-preview\ 4\ \(1\)\ \(1\).png"),url("../public/image_2023-05-11_142857333-removebg-preview 2 (1).png"),url("../public/Vector (1).png");
+    background-image: url("../../FRONT/public/Logo1.png"),url("../public/Logo2.png");
     background-repeat: no-repeat;
     background-position: 3%, 8%,90%;
 }
