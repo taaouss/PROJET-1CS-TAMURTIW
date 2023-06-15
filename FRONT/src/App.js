@@ -23,8 +23,8 @@ import AppRespo from './Composants/ResponsableCentral/AppRespo';
 
 function App() {
   return(
-  
- 
+  <LandingPage/>
+ /*
  <>
  <Router> 
  <Routes>
@@ -36,7 +36,7 @@ function App() {
  </Routes>
  </Router> 
  </> 
- 
+ */
   )
 }
 

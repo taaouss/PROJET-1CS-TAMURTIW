@@ -8,7 +8,7 @@ import './landing.css';
 
 function LandingPage() {
     return(
-  <div className='App'>
+  <div>
     <Header/>
     <section id='section2'>
        <div className="title-container">
