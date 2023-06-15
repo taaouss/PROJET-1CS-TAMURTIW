@@ -1,8 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router ,Route,Routes} from 'react-router-dom';
 import './App.css';
-
-
 import LandingPage from './Composants/landingPage/LandingPage';
 import PayementReussi from './Composants/PayementReussi/PayementReussi';
 import PagePayement from './Composants/PagePayement/pagePayement';
@@ -16,9 +14,8 @@ import FormulaireHoraire from './Composants/AdminGestion/GestionInformations/For
 import FormulaireDescription from './Composants/AdminGestion/GestionInformations/Formulaires/FormulaireDescription';
 import Formulaire from './Composants/AdminGestion/GestionInformations/Formulaires/Formulaire';
 import Informations from './Composants/AdminGestion/GestionInformations/Informations';
-import FormulaireAjouterEvenement from './Composants/AdminGestion/GestionEvenements/FormulaireAjouterEvenement';*/
-import Review from './Composants/Feedback/Review';
 import FormulaireAjouterEvenement from './Composants/AdminGestion/GestionEvenements/FormulaireAjouterEvenement';
+import Review from './Composants/Feedback/Review';
 import LieuCard from './Composants/GestionLieux/LieuCard';
 import ListeLieux from './Composants/GestionLieux/ListeLieux';
 import LieuRespo from './Composants/ResponsableCentral/LieuRespo';
