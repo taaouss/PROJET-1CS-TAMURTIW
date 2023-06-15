@@ -1,5 +1,6 @@
 import react, {useState} from 'react'
 import aa from '../Image/aa.png'
+import { Link } from 'react-router-dom';
 
 
 
@@ -36,14 +37,16 @@ function Navbar() {
             <label className='menu-icon' for='menu-btn'>
                 <span className='nav-icon'></span>
             </label>
+           
             <ul className='menu'>
                 <li><a onClick={() => scrollToSection('section3')} href="#section3">Home</a></li>
                 <li> <a onClick={() => scrollToSection('section2')} href="#section2">Features</a></li>
                 <li>  <a onClick={() => scrollToSection('section1')} href="#section1">A propos</a></li>
                 <li><a onClick={() => scrollToSection('section4')} href="#section4">Contact</a></li>
                 <li><a href='section3'>Connexion</a></li>
+                
     </ul>
-   
+    
     </nav>
         
     )
