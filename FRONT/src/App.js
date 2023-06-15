@@ -3,7 +3,7 @@ import { BrowserRouter as Router ,Route,Routes} from 'react-router-dom';
 import './App.css';
 import PayementReussi from './Composants/PayementReussi/PayementReussi';
 import PagePayement from './Composants/PagePayement/pagePayement';
-import AdminStatic from './Composants/AdminStatistic/AdminStatic';
+import AdminStatic from './Composants/ResponsableCentral/Static';
 import AppAdmin from './Composants/Admin/AppAdmin';
 import AjouterLieu from './Composants/AjouterLieu/AjouterLieu';
 import FormulaireModifications from './Composants/AdminGestion/GestionInformations/Formulaires/FormulaireModifications';
@@ -14,24 +14,25 @@ import FormulaireDescription from './Composants/AdminGestion/GestionInformations
 import Formulaire from './Composants/AdminGestion/GestionInformations/Formulaires/Formulaire';
 import Informations from './Composants/AdminGestion/GestionInformations/Informations';
 import FormulaireAjouterEvenement from './Composants/AdminGestion/GestionEvenements/FormulaireAjouterEvenement';
+import LieuCard from './Composants/GestionLieux/LieuCard';
+import ListeLieux from './Composants/GestionLieux/ListeLieux';
+import LieuRespo from './Composants/ResponsableCentral/LieuRespo';
+import AppRespo from './Composants/ResponsableCentral/AppRespo';
 function App() {
   return(
-  
- 
- <>
-
-
+<>
  <Router> 
  <Routes>
- <Route index element={<AppAdmin></AppAdmin>}/>
+ <Route index element={<AppRespo></AppRespo>}/>
  <Route path="Formulaire"  element={<Formulaire/>}/>
- <Route path="MiseAjourEvenements"  element={  <FormulaireAjouterEvenement></FormulaireAjouterEvenement>}/>
+ <Route path="MiseAjourEvenements"  element={  <FormulaireAjouterEvenement/>}/>
+ <Route path="Lieu"  element={<LieuRespo></LieuRespo>}/>
+ <Route path="AjouterLieu"  element={<AjouterLieu></AjouterLieu>}/>
  </Routes>
  </Router> 
  </> 
 
   )
- 
 }
 
 export default App;
