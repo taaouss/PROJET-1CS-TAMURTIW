@@ -16,10 +16,10 @@ import { v4 as uuidv4 } from 'uuid';
 function FormulaireModifications() {
 
   const [inputFields, setInputFields] = useState([
-    {"nom":"Inès","Jdebut":"Turquoise","Jfin":"Purple","Hdebut":"15:28","Hfin":"15:28","numero":863398034430},
-    {"nom":"Yú","Jdebut":"Mauv","Jfin":"Maroon","Hdebut":"15:28","Hfin":"15:28","numero":863398034430},
-    {"nom":"Célia","Jdebut":"Red","Jfin":"Violet","Hdebut":"15:28","Hfin":"15:28","numero":863398034430},
-    {"nom":"Mélina","Jdebut":"Aquamarine","Jfin":"Orange","Hdebut":"15:28","Hfin":"15:28","numero":863398034430}
+    {"id":1,"nom":"Inès","Jdebut":"Turquoise","Jfin":"Purple","Hdebut":"15:28","Hfin":"15:28","numero":863398034430},
+    {"id":2,"nom":"Yú","Jdebut":"Mauv","Jfin":"Maroon","Hdebut":"15:28","Hfin":"15:28","numero":863398034430},
+    {"id":3,"nom":"Célia","Jdebut":"Red","Jfin":"Violet","Hdebut":"15:28","Hfin":"15:28","numero":863398034430},
+    {"id":4,"nom":"Mélina","Jdebut":"Aquamarine","Jfin":"Orange","Hdebut":"15:28","Hfin":"15:28","numero":863398034430}
   ]);
      
 inputFields[0].Hdebut = "09:00";  

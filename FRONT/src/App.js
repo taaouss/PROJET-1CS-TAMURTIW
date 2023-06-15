@@ -6,7 +6,7 @@ import './App.css';
 import LandingPage from './Composants/landingPage/LandingPage';
 import PayementReussi from './Composants/PayementReussi/PayementReussi';
 import PagePayement from './Composants/PagePayement/pagePayement';
-import AdminStatic from './Composants/AdminStatistic/AdminStatic';
+import AdminStatic from './Composants/ResponsableCentral/Static';
 import AppAdmin from './Composants/Admin/AppAdmin';
 import AjouterLieu from './Composants/AjouterLieu/AjouterLieu';
 import FormulaireModifications from './Composants/AdminGestion/GestionInformations/Formulaires/FormulaireModifications';
@@ -16,24 +16,28 @@ import FormulaireHoraire from './Composants/AdminGestion/GestionInformations/For
 import FormulaireDescription from './Composants/AdminGestion/GestionInformations/Formulaires/FormulaireDescription';
 import Formulaire from './Composants/AdminGestion/GestionInformations/Formulaires/Formulaire';
 import Informations from './Composants/AdminGestion/GestionInformations/Informations';
+import FormulaireAjouterEvenement from './Composants/AdminGestion/GestionEvenements/FormulaireAjouterEvenement';
+import LieuCard from './Composants/GestionLieux/LieuCard';
+import ListeLieux from './Composants/GestionLieux/ListeLieux';
+import LieuRespo from './Composants/ResponsableCentral/LieuRespo';
+import AppRespo from './Composants/ResponsableCentral/AppRespo';
 function App() {
   return(
-    <div className='App'>
- <LandingPage/>
-    </div>
   
- /*
+ 
  <>
  <Router> 
  <Routes>
- <Route index element={<AppAdmin></AppAdmin>}/>
+ <Route index element={<AppRespo></AppRespo>}/>
  <Route path="Formulaire"  element={<Formulaire/>}/>
+ <Route path="MiseAjourEvenements"  element={  <FormulaireAjouterEvenement/>}/>
+ <Route path="Lieu"  element={<LieuRespo></LieuRespo>}/>
+ <Route path="AjouterLieu"  element={<AjouterLieu></AjouterLieu>}/>
  </Routes>
  </Router> 
  </> 
-  */
+  
   )
- 
 }
 
 export default App;

@@ -1,7 +1,7 @@
 import {React , useState} from 'react'
-import './AdminStatic.css'
-import CardStat from './CardStat'
-import ToggleButton from './ToggleButton'
+import '../AdminStatistic/AdminStatic.css'
+import CardStat from '../AdminStatistic/CardStat'
+import ToggleButton from '../AdminStatistic/ToggleButton'
 import { Bar, Radar} from 'react-chartjs-2';
 import 'chart.js/auto';
 

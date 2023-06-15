@@ -11,9 +11,9 @@ import { v4 as uuidv4 } from 'uuid';
 
 function FormulaireUrgences() {
     const [inputFields, setInputFields] = useState([
-      {"type":"Aquamarine","nom":"Andalax","contact":5935},
-    {"type":"Puce","nom":"Job","contact":370},
-    {"type":"Crimson","nom":"Ventosanzap","contact":6994},
+      {"id":1,"type":"Aquamarine","nom":"Andalax","contact":5935},
+    {"id":2,"type":"Puce","nom":"Job","contact":370},
+    {"id":3,"type":"Crimson","nom":"Ventosanzap","contact":6994},
       ]);
 
       const handleChangeInput = (id, event) => {
