@@ -1,0 +1,15 @@
+import SigninPageAdmin from "./Pages/SignIn/SignInAdmin/SigninPageAdmin";
+import SigninPageResponsable from "./Pages/SignIn/SignInResponsable/SigninPageResponsable";
+import PageAdmin from "./Pages/SignIn/SignInAdmin/Admin";
+import PageResponsable from "./Pages/SignIn/SignInResponsable/Responsable";
+import SigninPage from "./Pages/SignIn/Signin";
+import SigninPageUser from "./Pages/SignIn/SignInUser/SigninPageUser";
+
+
+
+      <Route path="/Signin" element={<SigninPage />} />
+      <Route path="/Signin/Signinuser" element={<SigninPageUser />} />
+      <Route path="/Signin/SigninAdmin" element={<SigninPageAdmin />} />
+      <Route path="/Signin/SigninResponsable" element={<SigninPageResponsable/>} />
+      <Route path="/PageResponsable" element={<PageResponsable />} />
+      <Route path="/PageAdmin" element={<PageAdmin />} />
