@@ -1,6 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router ,Route,Routes} from 'react-router-dom';
 import './App.css';
+import './index.css';
+
+import LandingPage from './Composants/landingPage/LandingPage';
 import PayementReussi from './Composants/PayementReussi/PayementReussi';
 import PagePayement from './Composants/PagePayement/pagePayement';
 import AdminStatic from './Composants/AdminStatistic/AdminStatic';
@@ -15,8 +18,11 @@ import Formulaire from './Composants/AdminGestion/GestionInformations/Formulaire
 import Informations from './Composants/AdminGestion/GestionInformations/Informations';
 function App() {
   return(
+    <div className='App'>
+ <LandingPage/>
+    </div>
   
- 
+ /*
  <>
  <Router> 
  <Routes>
@@ -25,7 +31,7 @@ function App() {
  </Routes>
  </Router> 
  </> 
-
+  */
   )
  
 }
