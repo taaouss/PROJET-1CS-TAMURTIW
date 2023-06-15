@@ -1,0 +1,50 @@
+
+.App {
+
+	text-align: center;
+	margin-left: 500px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 10px;
+    line-height: 18px;
+  }
+ 
+  .btn{
+    border: 2px solid #007EA7;
+    background-color: #007EA7;
+    font-size: 15px;
+    font-family: 'Inter';
+    font-style: normal;
+    height: 40px;
+    width: 200px;
+    border-radius: 0%;
+   border-radius: 10px;
+
+  }
+.put {
+  height: 100px;
+  width: 600px;
+  text-align: left ;
+  
+}
+  .titre{
+    height: 30px;
+    width: 250px;
+    text-align: center;
+  }
+  .cmnt{
+    position: absolute;
+    top: 2%;
+    left: 4%;
+    white-space: pre-line;
+    font-size: 15px;
+    font-family: 'Inter';
+    font-style: normal;
+  }
+  @media screen and (max-width: 1000px) {
+   
+    .cmnt{
+      width: 90%;
+      font-size: 0.9em;
+    }
+  }
