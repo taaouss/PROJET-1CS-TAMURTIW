@@ -1,8 +1,9 @@
 import {React,useState} from 'react'
-import AdminStatic from '../AdminStatistic/AdminStatic';
+import AdminStatic from '../ResponsableCentral/Static';
 import '../AdminStatistic/AdminStatic.css'
 import AdminGestion from '../AdminGestion/AdminGestion';
 import AdminCommentaire from '../AdminCommentaire/AdminCommentaire';
+import RespoStatistiques from '../AdminStatistic/AdminStatistiques';
 function AppAdmin() {
   const [activeElement, setActiveElement] = useState('Statistiques');
 
@@ -22,7 +23,7 @@ function AppAdmin() {
              <button  className={`bouton ${activeElement === 'Commentaires' ? 'boutonClique' : ''}`} onClick={() => handleButtonClick('Commentaires')}> Commentaires </button>
             </div>
             <div className='statistics'>
-            {activeElement === 'Statistiques' && <div><AdminStatic></AdminStatic></div>}
+            {activeElement === 'Statistiques' && <div><RespoStatistiques></RespoStatistiques></div>}
             {activeElement === 'Gestion' && <div><AdminGestion></AdminGestion></div>}
             {activeElement === 'Commentaires' && <div><AdminCommentaire></AdminCommentaire></div>}
             </div>
