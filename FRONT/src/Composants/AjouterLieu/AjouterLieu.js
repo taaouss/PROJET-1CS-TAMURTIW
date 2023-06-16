@@ -4,10 +4,12 @@ import './AjouterLieu.css'
 function AjouterLieu() {
   const [nomLieu, setnomLieu] = useState('');
   const [categorie, setCategorie] = useState('');
-  const [employeLieu, setEmployeLieu] = useState('');
   const [description, setDescription] = useState('');
   const [longitude, setLongitude] = useState("");
   const [latitude, setLatitude] = useState("");
+  const [nomEmploye, setLNomEmploye] = useState("");
+  const [prenomEmploye, setPrenomEmploye] = useState("");
+  const [emailEmploye, setEmailEmploye] = useState("");
   const handleSubmit = (event) => {
     event.preventDefault();
     setnomLieu('');
@@ -15,14 +17,18 @@ function AjouterLieu() {
     setDescription('');
     setLongitude("");
     setLatitude("");
+    setLNomEmploye("");
+    setPrenomEmploye('');
+    setEmailEmploye('');
   };
   return (
     <div>
     <div className='bar'/>
     <div className='containerA'>
     <div className='Map'></div>
-    <div className='InfoContainer1'>      
+    <div  style={{ maxHeight: '525px', overflow: 'auto'}} className='InfoContainer1'>      
     <form onSubmit={handleSubmit}>
+      <h2>Ajout de lieu :</h2>
     <div>
       <label className='gridLabel'>
          <p>Nom du lieu :</p>
@@ -35,10 +41,19 @@ function AjouterLieu() {
         <input className='Description' type="text" value={description} onChange={(e) => setDescription(e.target.value)} />
       </label>
     </div>
-    <div>
-      <label className='gridLabel'>
-         <p>Employé du lieu :</p>
-        <input  className='Nom'type="text" value={employeLieu} onChange={(e) => setEmployeLieu(e.target.value)} />
+    <div className='coordonnees'>
+      <p> Employé du lieu :</p>
+      <label className='gridLabel' >
+        Nom de l'employé:
+        <input className='Longitude' type="text" value={nomEmploye} onChange={(e) => setLNomEmploye(e.target.value)} />
+      </label>
+      <label className='gridLabel'> 
+        Prenom de l'employé:
+        <input className='Latitude' type="text" value={prenomEmploye} onChange={(e) => setPrenomEmploye(e.target.value)} />
+      </label>
+      <label className='gridLabel'> 
+        l'email de l'employé :
+        <input className='Latitude' type="email" value={emailEmploye} onChange={(e) => setEmailEmploye(e.target.value)} />
       </label>
     </div>
     <div>

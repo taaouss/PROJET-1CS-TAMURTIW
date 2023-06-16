@@ -1,5 +1,5 @@
 .InfoContainer1{
-width: 650px;
+width: 680px;
 height: 70vh;
 background: #F0F0F2;
 border-radius: 10px;
@@ -21,7 +21,7 @@ color: #000000;
     align-items: center; 
 }
 .Description{
-width: 500px;
+width: 450px;
 height: 40px;
 background: rgb(0, 126, 167,0.2);
 border: 1px solid rgba(152, 219, 175, 0.6);
@@ -29,7 +29,7 @@ border-radius: 5px;
 margin-top: 20px;
 }
 .Nom {
-    width: 500px;
+    width: 450px;
     height: 40px;
     background: rgb(0, 126, 167,0.2);
     border: 1px solid rgba(152, 219, 175, 0.6);
@@ -37,7 +37,7 @@ margin-top: 20px;
     margin-top: 20px;
 }
 .Categorie{
-    width: 500px;
+    width: 450px;
     height: 40px;
     background: rgb(0, 126, 167,0.2);
     border: 1px solid rgba(152, 219, 175, 0.6);
@@ -89,7 +89,7 @@ margin-top: 50px;
     flex-direction: column;
 }
 .Latitude{
-    width: 500px;
+    width: 450px;
     height: 40px;
     background: rgb(0, 126, 167,0.2);
     border: 1px solid rgba(152, 219, 175, 0.6);
@@ -97,7 +97,7 @@ margin-top: 50px;
     margin-top: 20px;
 }
 .Longitude{
-    width: 500px;
+    width: 450px;
     height: 40px;
     background: rgb(0, 126, 167,0.2);
     border: 1px solid rgba(152, 219, 175, 0.6);
