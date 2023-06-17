@@ -5,10 +5,11 @@
     padding: 20px;
 }
 .Map{
+  background-image: url("../../..//public/c861e55f698bf64deb7701a034d0ad13.png");
     width: 691px;
     height: 83vh;
     border-radius: 50px;
-background-color: #003459;}
+}
 .boutons{
   display: flex;
   justify-content: center;
