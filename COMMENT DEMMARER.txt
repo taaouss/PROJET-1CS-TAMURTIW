@@ -1,0 +1,14 @@
+1- ouvre un terminal 1:pour demarrer le back end
+PS C:\Users\USER\Desktop\projet> cd backend_new
+PS C:\Users\USER\Desktop\projet\backend_new> cd backend_new
+PS C:\Users\USER\Desktop\projet\backend_new\backend_new> flask --app  main --debug run
+
+2- ouvre un autre terminal : pour demarrer le front 
+PS C:\Users\USER\Desktop\projet> npm install
+PS C:\Users\USER\Desktop\projet> npm start
+
+
+
+3- pour run le serveur pour obtenir les willaya et commune faut se rend dans le dossier du front en suite executer la commende suivante:
+
+npx json-server --watch src/Data/wilaya_commune.json --port 9000

@@ -1,0 +1,18 @@
+.image-gallery {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: gray lightgray;
+  }
+  
+  .image-gallery.scrollable {
+    overflow-x: scroll;
+  }
+  
+  .image-gallery__item {
+    flex-shrink: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
